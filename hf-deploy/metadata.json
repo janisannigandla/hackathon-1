@@ -1,0 +1,5 @@
+{
+  "name": "Delivery Route Optimizer",
+  "description": "A simulation environment for AI delivery route optimization with varying difficulties, traffic, and scoring.",
+  "requestFramePermissions": []
+}
