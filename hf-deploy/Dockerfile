@@ -1,11 +1,9 @@
-FROM node:20
+FROM python:3.10
 
 WORKDIR /app
 
 COPY . .
 
-RUN npm install
+RUN pip install fastapi uvicorn
 
-EXPOSE 3000
-
-CMD ["node", "server.cjs"]
+CMD ["uvicorn", "inference:app", "--host", "0.0.0.0", "--port", "7860"]
